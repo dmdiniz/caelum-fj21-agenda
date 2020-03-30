@@ -22,7 +22,7 @@ public class AdicionaContatoServlet extends HttpServlet{
 	protected void service(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		/*PrintWriter out = response.getWriter();
+		PrintWriter out = response.getWriter();
 		
 		String nome = request.getParameter("nome");
 		String endereco = request.getParameter("endereco");
@@ -57,7 +57,8 @@ public class AdicionaContatoServlet extends HttpServlet{
         out.println("Contato " + nome +
                 " adicionado com sucesso");
         out.println("</body>");
-        out.println("</html>");*/
-		response.sendRedirect("lista-contatos-scriptlet.jsp");
+        out.println("</html>");
+       
+		response.sendRedirect("adiciona-contato.html");
 	}
 }
