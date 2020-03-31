@@ -59,6 +59,6 @@ public class AdicionaContatoServlet extends HttpServlet{
         out.println("</body>");
         out.println("</html>");
        
-		response.sendRedirect("adiciona-contato.html");
+		//response.sendRedirect("adiciona-contato.html");
 	}
 }
