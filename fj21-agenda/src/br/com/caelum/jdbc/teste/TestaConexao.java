@@ -24,7 +24,7 @@ public class TestaConexao {
 	       contato.setDataNascimento(Calendar.getInstance());
 
 	       // grave nessa conexão!!!
-	       ContatoDao dao = new ContatoDao();
+	       ContatoDao dao = new ContatoDao(null);
 
 	       // método elegante
 	       dao.adiciona(contato);
@@ -33,7 +33,7 @@ public class TestaConexao {
 	}
 	
 	public static void listaContatos() {
-		ContatoDao dao = new ContatoDao();
+		ContatoDao dao = new ContatoDao(null);
 		List<Contato> contatos = dao.getLista();
 		SimpleDateFormat data = new SimpleDateFormat("dd/MM/yyyy");
 		for (Contato contato : contatos) {
